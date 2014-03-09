@@ -1788,8 +1788,8 @@ angular.module('ngMockE2E', ['ng']).config(['$provide', function($provide) {
  * on the `ngMockE2E` and your application modules and defines the fake backend:
  *
  * ```js
- *   myAppDev = angular.module('myAppDev', ['myApp', 'ngMockE2E']);
- *   myAppDev.run(function($httpBackend) {
+ *   superChartDev = angular.module('superChartDev', ['superChart', 'ngMockE2E']);
+ *   superChartDev.run(function($httpBackend) {
  *     phones = [{name: 'phone1'}, {name: 'phone2'}];
  *
  *     // returns the current list of phones
@@ -2073,16 +2073,16 @@ if(window.jasmine || window.mocha) {
    * Example of what a typical jasmine tests looks like with the inject method.
    * ```js
    *
-   *   angular.module('myApplicationModule', [])
+   *   angular.module('superChartlicationModule', [])
    *       .value('mode', 'app')
    *       .value('version', 'v1.0.1');
    *
    *
-   *   describe('MyApp', function() {
+   *   describe('superChart', function() {
    *
    *     // You need to load modules that you want to test,
    *     // it loads only the "ng" module by default.
-   *     beforeEach(module('myApplicationModule'));
+   *     beforeEach(module('superChartlicationModule'));
    *
    *
    *     // inject() is used to inject arguments of all given functions

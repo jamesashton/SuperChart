@@ -41,7 +41,7 @@ a=a.angular||(a.angular={});a.$$minErr=a.$$minErr||d;return a.module||(a.module=
       'js/directives.js'
     ], function() {
       // when all is done, execute bootstrap angular application
-      angular.bootstrap(document, ['myApp']);
+      angular.bootstrap(document, ['superChart']);
     });
   </script>
   <title>My AngularJS App</title>
@@ -49,8 +49,8 @@ a=a.angular||(a.angular={});a.$$minErr=a.$$minErr||d;return a.module||(a.module=
 </head>
 <body ng-cloak>
   <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
+    <li><a href="#/chartView">chartView</a></li>
+    <li><a href="#/newChartView">newChartView</a></li>
   </ul>
 
   <div ng-view></div>

@@ -2,15 +2,15 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', [
+angular.module('superChart', [
   'ngRoute',
-  'myApp.filters',
-  'myApp.services',
-  'myApp.directives',
-  'myApp.controllers'
+  'superChart.filters',
+  'superChart.services',
+  'superChart.directives',
+  'superChart.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.when('/chartView', {templateUrl: 'partials/chart.html', controller: 'chartCtrl'});
+  $routeProvider.when('/newChartView', {templateUrl: 'partials/newChart.html', controller: 'newChartCtrl'});
+  $routeProvider.otherwise({redirectTo: '/newChartView'});
 }]);
