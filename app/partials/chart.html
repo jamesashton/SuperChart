@@ -1,4 +1,4 @@
-<div ng-controller="superChart.controllers.ChartController">
+<div ng-controller="superChart.controllers.ChartController" class="chart">
     <H1>{{chartDetail.name}}</H1>
     <p>{{chartDetail.description}}</p>
     
@@ -6,17 +6,23 @@
     
     <H2>Series</H2>
     
-    <table>
+    <table class="series">
         <thead>
             <th>Name</th>
-            <th>Expression</th>            
-            <th>Colour</th>
+            <th colspan="2">Expression</th>            
+            <th class="colour">Colour</th>
         </thead>
         <tr ng-repeat="serie in chartDetail.series">
             <td class="serie name">{{serie.name}}</td>
             <td class="serie expression">{{serie.expression}}</td>
-            <td class="serie colour" style="background-color:{{serie.colour}};"></td>
+			<td class="serie searchbutton"><i ng-click="expressionSearch(serie)" class="glyphicon glyphicon-search"></i></td>
+            <td class="serie colour" >
+				<div class="colour" style="background-color:{{serie.colour}};"> 
+				&nbsp;</div>
+			</td>
         </tr>
+		
+		
     </table>
 
 </div>

@@ -28,17 +28,17 @@ div.logo
 	bottom: 20px;
 	left: 0px;
 	right:0px;
-	
+	overflow: auto;
 	padding-top: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
-	
+	padding-bottom: 20px;
 	border: 0.1em solid black;
 	background-color: #ffffff;
 	/*height: 100%;*/
 }
 
-.menu {
+.xmenu {
 	
 
   height: 40px;
@@ -47,24 +47,24 @@ div.logo
 
   margin-bottom: 0;
   padding: 0 0 0;position: absolute;
-	top: 10px;
+	top: 22px;
 }
 
-.menu:before {
+.xmenu:before {
 /*  content: "["; */
 	 padding-left: 20px;
 }
 
-.menu:after {
+.xmenu:after {
 /*  content: "]"; */
 }
 
-.menu > li {
+.xmenu > li {
 	  display: inline;
 	  height: 35px;
 	 padding-right: 10px;
 }
-.menu > li a {
+.xmenu > li a {
 	background-color: #CCCCCC;
 	border: 1px solid #AAAAAA;
 	padding-left: 10px;
@@ -74,19 +74,19 @@ div.logo
 	font-size: 30px;
 	border-bottom: 1px solid black !important;
 }
-.menu > li a.current {
+.xmenu > li a.current {
 	background-color: #EEEEEE;
 	color: orange;
 }
 
-.menu > li a:hover {
+.xmenu > li a:hover {
 	color: orange;
-
+background-color: #EEEEEE;	
 }
-.menu > li:before {
-
+.xmenu > li:before {
+	
 }
-.menu > li:nth-child(1):before {
+.xmenu > li:nth-child(1):before {
   content: "";
   padding: 0; 
 }

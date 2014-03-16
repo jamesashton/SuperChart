@@ -34,4 +34,14 @@ controller('superChart.controllers.ChartController', ['$scope',function($scope) 
                 startTime: '01/01/2013',
                 endTime: null
          }
+		 
+		$scope.expressionSearch = function(serie)
+		{
+			console.log("Expression search has been called");
+			serie.expression = serie.expression + "(UPDATED)";
+		}
+
+		
+
+		 
     }]);
