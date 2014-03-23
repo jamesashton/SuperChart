@@ -1,3 +1,6 @@
+/* global angular */
+/* global console */
+/* jshint -W097 */
 'use strict';
 
 
