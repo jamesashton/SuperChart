@@ -1,11 +1,11 @@
-<div ng-controller="superChart.controllers.ChartController" class="chart">
+<div class="chart">
     <H1>{{chartDetail.name}}</H1>
     <p>{{chartDetail.description}}</p>
     
-    <div style="display:block;font-size: 72pt; color: white; background-color: silver; text-align: center; vertical-align:middle; width:100%;padding-top:100px;padding-bottom:100px;">CHART</div>
+    <div id="chart{{selectedChartIndex}}" style="display:block;font-size: 72pt; text-align: center; vertical-align:middle; width:100%; max-height: 300px"></div>
     
     <H2>Series</H2>
-    
+    <button ng-click="drawChart()">refresh</button>
     <table class="series">
         <thead>
             <th>Name</th>
@@ -21,8 +21,6 @@
 				&nbsp;</div>
 			</td>
         </tr>
-		
-		
     </table>
 
 </div>

@@ -11,14 +11,14 @@
   <div class="outer">
 	  
 	  <ul class="xmenu">
-		<li><a href="#/chartView" class="current">Chart 1</a></li>
-		<li><a href="#/chartView">Chart 2</a></li>
+		<li><a href="#/chartView/0" class="current">Chart 1</a></li>
+		<li><a href="#/chartView/1">Chart 2</a></li>
 		<li class="anchor_right"><a href="#/newChartView">+</a></li>
 	  </ul>
 	  
 	  <div class="logo">SuperChart</div>
 
-	  <div class="viewcontainer"  ng-view></div>
+	  <div class="viewcontainer" ng-view></div>
 
 	  <div class="footer">
 		  
@@ -29,6 +29,7 @@
 		  <div class="right">
 			  	SuperChart version: <span app-version></span>
 	  		</div>
+          
 	  </div>
 
 
@@ -47,9 +48,10 @@
     
 	<script src="lib/amcharts/amcharts.js" type="text/javascript"></script>
 	<script src="lib/amcharts/serial.js" type="text/javascript"></script>
-	
+	<script src="lib/dygraph-combined.js" type="text/javascript"></script>
 	
     <script src="js/app.js"></script>
+     <script src="js/data.js"></script>
     <script src="js/services.js"></script>
     <script src="js/controllers/ChartController.js"></script>
     <script src="js/controllers/NewChartController.js"></script>
