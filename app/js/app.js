@@ -8,10 +8,12 @@
 angular.module('superChart', [
   'ngRoute',
   'superChart.filters',
-  'superChart.services',
+    'superChart.services',  
+  'superChart.services.VersionService',  
+  'superChart.services.ChartService',      
   'superChart.directives',
   'superChart.controllers.ChartController',
-    'superChart.controllers.NewChartController'
+  'superChart.controllers.NewChartController'
 ]).config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/chartView/:chartIndex', {templateUrl: 'partials/chart.html', controller: 'superChart.controllers.ChartController'});
   $routeProvider.when('/newChartView', {templateUrl: 'partials/newChart.html', controller: 'superChart.controllers.NewChartController'});
