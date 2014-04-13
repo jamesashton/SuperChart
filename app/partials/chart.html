@@ -1,8 +1,8 @@
-<div class="chart">
+<div class="chart" data-ng-init="init()">
     <H1>{{chartDetail.name}}</H1>
     <p>{{chartDetail.description}}</p>
     
-    <div id="chart{{selectedChartIndex}}" style="display:block;font-size: 72pt; text-align: center; vertical-align:middle; width:100%; max-height: 300px"></div>
+    <div id="{{selectedChartId}}" style="display:block;font-size: 72pt; text-align: center; vertical-align:middle; width:100%; max-height: 300px"></div>
     
     <H2>Series</H2>
     <button ng-click="drawChart()">refresh</button>
