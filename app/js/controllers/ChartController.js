@@ -18,7 +18,7 @@ controllers.controller('superChart.controllers.ChartController', ['$scope','$rou
         $scope.chart = null;
         $scope.init = function() 
         {
-           console.log("Inside init methods");
+           console.log("Inside init method");
             if($scope.charts!==null)
 			{
                 $scope.charts = $scope.chartdata;
