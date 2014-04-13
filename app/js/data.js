@@ -1,4 +1,4 @@
-function data() {
+function csvdata() {
 return "" +
 "Date,NY,SF\n" +
 "20070101,46;51;56,43;45;48\n" +
