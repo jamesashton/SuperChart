@@ -25,12 +25,9 @@
 <body>
   <div class="outer">
 	  
-	  <ul class="xmenu" ng-controller="superChart.controllers.MenuController">
-        <li ng-repeat="chart in charts"><a href="#/chartView/{{$index}}" class="current">{{chart.name}}</a></li>
-          
-		<!---li><a href="#/chartView/0" class="current">Chart 1</a></li>
-		<li><a href="#/chartView/1">Chart 2</a></li>
-		<li class="anchor_right"><a href="#/newChartView">+</a></li-->
+	  <ul class="xmenu" ng-controller="superChart.controllers.MenuController"  data-ng-init="init()">
+        <li ng-repeat="chart in charts"><a href="#/chartView/{{$index}}" class="{{current}}">{{chart.name}}</a></li>
+        <li class="anchor_right"><a href="#/newChartView">+</a></li>
 	  </ul>
 	  
 	  <div class="logo">SuperChart</div>

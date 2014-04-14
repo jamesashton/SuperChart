@@ -10,8 +10,7 @@ var app = angular.module('superChart', [
   'superChart.filters',
   'superChart.services',
   'superChart.directives',
-  'superChart.controllers',
-'superChart.controllers.MenuController'
+  'superChart.controllers'
 ]).config(['$routeProvider',function($routeProvider) {
     
     $routeProvider.when('/chartView/:chartIndex', {templateUrl: 'partials/chart.html', controller: 'superChart.controllers.ChartController'});
