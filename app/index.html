@@ -6,6 +6,21 @@
      <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/app.css"/>
      <link rel="stylesheet" href="css/chart.css"/> 
+	<script>
+	   //Chrome passes the error object (5th param) which we must use since it now truncates the Msg (1st param).
+    window.onerror = function (errorMsg, url, lineNumber, columnNumber, errorObject) {
+        var errMsg;
+        //check the errorObject as IE and FF don't pass it through (yet)
+        if (errorObject && errorObject !== undefined) {
+                errMsg = errorObject.message;
+            }
+            else {
+                errMsg = errorMsg;
+            }
+        alert('Error: ' + errMsg);
+    }
+
+	</script>
 </head>
 <body>
   <div class="outer">
@@ -53,11 +68,12 @@
 	<script src="lib/dygraph-combined.js" type="text/javascript"></script>
 	
     <script src="js/app.js"></script>
-     <script src="js/data.js"></script>
+    <script src="js/data.js"></script>
 	<script src="js/services.js"></script>
-     <script src="js/services/ChartService.js"></script>
-     <script src="js/services/VersionService.js"></script>
-     <script src="js/controllers.js"></script>
+    <script src="js/services/ChartService.js"></script>
+    <script src="js/services/VersionService.js"></script>
+    <script src="js/controllers.js"></script>
+	<script src="js/controllers/MenuController.js"></script>
     <script src="js/controllers/ChartController.js"></script>
     <script src="js/controllers/NewChartController.js"></script>
     <script src="js/filters.js"></script>

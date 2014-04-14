@@ -1,13 +1,11 @@
-/* global Dygraph */
-/* global document */
-/* global csvdata */
 /* global console */
-/* global controllers */
 /* global $routeParams */
+/* global app */
+/* global controllers */
 /* jshint -W097 */
 'use strict';
 
-controllers.controller('superChart.controllers.MenuController', ['$scope','$routeParams','superChart.services.chartService',function($scope,$routeParams, chartService) {
+app.controller('superChart.controllers.MenuController', ['$scope','$routeParams','superChart.services.chartService',function($scope,$routeParams, chartService) {
 	$scope.chartdata = chartService.getAll();
     $scope.init = function() 
     {
