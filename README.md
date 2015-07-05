@@ -1,6 +1,6 @@
-# SuperChart - My first Angular application
+# SuperChart - My Angular based charting prototype
 
-Is to me a multi-series open ended charting tool 
+This work is a multi-series open ended charting tool 
 
 
 # angular-seed — the seed for AngularJS apps
@@ -22,11 +22,6 @@ don't require a backend server at all, we recommend hosting the project files us
 webserver during development to avoid issues with security restrictions (sandbox) in browsers. The
 sandbox implementation varies between browsers, but quite often prevents things like cookies, xhr,
 etc to function properly when an html page is opened via `file://` scheme instead of `http://`._
-
-
-## How to use angular-seed
-
-Clone the angular-seed repository and start hacking...
 
 
 ### Running the app during development
@@ -144,6 +139,4 @@ fetch the changes and merge them into your project with git.
         filtersSpec.js          --> specs for filters
         servicesSpec.js         --> specs for services
 
-## Contact
 
-For more information on AngularJS please check out http://angularjs.org/
